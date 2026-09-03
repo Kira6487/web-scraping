@@ -125,3 +125,33 @@ Cubren limpieza de emails, normalización de URL, redirecciones y HTTP 202, JSON
 - El análisis no ejecuta navegador ni JavaScript para mantener el crawler ligero.
 
 Fase 2 recomendada: adaptador opcional Playwright para sitios JS-only con límites explícitos, configuración YAML con validación de esquema, persistencia incremental, un verificador externo de teléfono/email y concurrencia global controlada con presupuesto por dominio.
+
+## Prospect Engine UI
+
+La interfaz web usa Python `http.server` y JavaScript/CSS nativos; no agrega un framework pesado ni duplica el motor. El backend lee `GOOGLE_PLACES_API_KEY` exclusivamente desde el entorno.
+
+Iniciar:
+
+```bash
+export GOOGLE_PLACES_API_KEY="TU_API_KEY"
+python web_app.py --host 127.0.0.1 --port 8000
+```
+
+Abrir `http://127.0.0.1:8000`. La UI permite seleccionar país, región, ciudad o ciudad personalizada, múltiples categorías y un máximo global entre 1 y 500. Los catálogos compartidos están en `config/locations.json` y `config/business_categories.json`.
+
+Endpoints:
+
+- `POST /api/search`: inicia una ejecución asíncrona y devuelve un `run_id`.
+- `GET /api/search/{run_id}`: devuelve etapa, progreso y resumen.
+- `GET /api/results/{run_id}/download`: descarga el XLSX terminado; no acepta paths del cliente.
+- `GET /api/options`: expone únicamente catálogos públicos, nunca secretos.
+
+El botón se bloquea durante la ejecución y el backend impide búsquedas simultáneas dentro del proceso. Los resultados siguen generándose en `output/` con timestamp y no se versionan porque `output/*.xlsx` está ignorado.
+
+Para ejecutar tests del backend y UI:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+No hay build frontend separado: los assets estáticos se sirven directamente desde `web/`.

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FORM4TH Prospect Engine</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div class="brand-mark">F4</div>
+      <div>
+        <p class="eyebrow">FORM4TH</p>
+        <h1>Prospect Engine</h1>
+        <p class="subtitle">Find and analyze high-potential B2B prospects.</p>
+      </div>
+    </header>
+
+    <section class="card" aria-labelledby="search-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">DISCOVERY</p><h2 id="search-title">Build a prospect search</h2></div>
+        <span class="badge">Private backend</span>
+      </div>
+      <form id="search-form">
+        <div class="grid location-grid">
+          <label>Country<select id="country" required></select></label>
+          <label>State / Region<select id="state" required disabled><option>Loading...</option></select></label>
+          <label>City<select id="city" required disabled><option>Select a region first</option></select></label>
+        </div>
+        <label class="custom-city">Custom city <input id="custom-city" type="text" placeholder="Optional city not in the list"></label>
+
+        <div class="category-header"><h3>Business Categories</h3><div><button type="button" class="text-button" id="select-all">Select all</button><button type="button" class="text-button" id="clear-all">Clear all</button></div></div>
+        <div id="categories" class="category-groups" aria-live="polite"></div>
+
+        <label class="max-results">Maximum Results<select id="max-results"><option>10</option><option>25</option><option selected>50</option><option>100</option><option>150</option><option>250</option></select></label>
+        <button id="submit-button" class="primary-button" type="submit" disabled>Generate Prospect Search <span>→</span></button>
+        <p id="form-error" class="error" role="alert"></p>
+      </form>
+    </section>
+
+    <section id="progress-card" class="card hidden" aria-live="polite">
+      <div class="section-heading"><div><p class="eyebrow">RUNNING</p><h2 id="progress-title">Preparing search...</h2></div><div class="spinner"></div></div>
+      <div class="progress-meta"><span id="progress-count">Preparing...</span><span id="run-id"></span></div>
+      <div class="progress-track"><div class="progress-bar"></div></div>
+    </section>
+
+    <section id="result-card" class="card hidden" aria-live="polite">
+      <div class="section-heading"><div><p class="eyebrow success-label">COMPLETE</p><h2>Search completed</h2></div><span class="check">✓</span></div>
+      <div id="summary" class="summary-grid"></div>
+      <a id="download-button" class="primary-button download-button" href="#">Download Excel <span>↓</span></a>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

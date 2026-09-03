@@ -1,0 +1,25 @@
+{
+  "US": {
+    "label": "United States",
+    "regions": {
+      "FL": {"label": "Florida", "cities": ["Miami", "Tampa", "Orlando", "Jacksonville"]},
+      "TX": {"label": "Texas", "cities": ["Austin", "Dallas", "Houston", "San Antonio"]},
+      "GA": {"label": "Georgia", "cities": ["Atlanta", "Savannah"]},
+      "AZ": {"label": "Arizona", "cities": ["Phoenix", "Scottsdale", "Tucson"]},
+      "CA": {"label": "California", "cities": ["Los Angeles", "San Diego", "San Francisco", "San Jose"]},
+      "NY": {"label": "New York", "cities": ["New York City", "Buffalo", "Albany"]},
+      "NC": {"label": "North Carolina", "cities": ["Charlotte", "Raleigh", "Durham"]},
+      "VA": {"label": "Virginia", "cities": ["Arlington", "Richmond", "Virginia Beach"]}
+    }
+  },
+  "PE": {
+    "label": "Peru",
+    "regions": {
+      "LIM": {"label": "Lima", "cities": ["Lima", "Miraflores", "San Isidro"]},
+      "ARE": {"label": "Arequipa", "cities": ["Arequipa"]},
+      "CUS": {"label": "Cusco", "cities": ["Cusco"]},
+      "LAL": {"label": "La Libertad", "cities": ["Trujillo"]},
+      "PIU": {"label": "Piura", "cities": ["Piura"]}
+    }
+  }
+}

@@ -156,6 +156,7 @@ class Config:
     retries: int = 1
     rate_limit_seconds: float = 0.25
     page_size: int = 20
+    max_results: int = 50
     output_dir: Path = DEFAULT_OUTPUT_DIR
     min_reviews: int = 0
     weights: dict[str, int] = field(default_factory=lambda: {
@@ -1241,6 +1242,33 @@ def query_plan(args: argparse.Namespace) -> dict[str, list[str]]:
     return {category: [template.format(city=city) for template in templates]}
 
 
+def build_selected_query_plan(categories: list[str], city: str, state: str, country: str = "US") -> dict[str, list[str]]:
+    """Build queries for the UI using the same category source as the engine."""
+    location = f"{city} {state}".strip()
+    if country == "PE":
+        location = f"{city}, {state}, Peru"
+    templates = {
+        "Real Estate": ["real estate agents in {location}"],
+        "Commercial Real Estate": ["commercial real estate in {location}"],
+        "Property Management": ["property management companies in {location}"],
+        "Home Services": ["home services companies in {location}"],
+        "Roofing": ["roofing contractors in {location}", "roof repair in {location}"],
+        "HVAC": ["HVAC services in {location}"],
+        "Plumbing": ["plumbers in {location}"],
+        "Remodeling": ["remodeling contractors in {location}"],
+        "Landscaping": ["landscaping companies in {location}"],
+        "Solar": ["solar installation companies in {location}"],
+        "Law Firms": ["law firms in {location}"],
+        "Professional Services": ["professional services companies in {location}"],
+    }
+    plan: dict[str, list[str]] = {}
+    for category in categories:
+        canonical = CATEGORY_ALIASES.get(category.lower(), category)
+        if canonical in templates:
+            plan[canonical] = [template.format(location=location) for template in templates[canonical]]
+    return plan
+
+
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--api-key", default="", help="Google Places key; env GOOGLE_PLACES_API_KEY is preferred.")
@@ -1252,59 +1280,63 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--max-depth", type=int, default=1)
     parser.add_argument("--timeout", type=int, default=5)
     parser.add_argument("--min-reviews", type=int, default=0)
+    parser.add_argument("--max-results", type=int, default=50, help="Global maximum of unique results.")
     return parser.parse_args(argv)
 
 
-def run_engine(args: argparse.Namespace, discovery: PlacesNewDiscovery | None = None) -> Path:
-    start = datetime.now().astimezone()
-    run_id = start.strftime("%Y%m%d%H%M%S")
-    config = Config(
-        max_pages_per_site=max(1, args.max_pages),
-        max_depth=max(0, args.max_depth),
-        request_timeout=max(1, args.timeout),
-        min_reviews=max(0, args.min_reviews),
-        output_dir=Path(args.output_dir),
-    )
-    queries_by_category = query_plan(args)
-    api_key = (args.api_key or os.getenv("GOOGLE_PLACES_API_KEY") or GOOGLE_PLACES_API_KEY).strip()
+def execute_search(
+    queries_by_category: dict[str, list[str]],
+    api_key: str,
+    config: Config,
+    progress: Any | None = None,
+    discovery: PlacesNewDiscovery | None = None,
+) -> tuple[list[Prospect], list[ValidationIssue], dict[str, Any]]:
+    """Shared search service used by both CLI and web UI."""
     if not api_key:
-        raise SystemExit("ERROR: set GOOGLE_PLACES_API_KEY or provide --api-key.")
-
-    discovery = discovery or PlacesNewDiscovery(api_key, config)
-    raw_prospects: list[Prospect] = []
+        raise ValueError("Google API key is not configured.")
     total_queries = sum(len(items) for items in queries_by_category.values())
+    raw_prospects: list[Prospect] = []
+    discovery = discovery or PlacesNewDiscovery(api_key, config)
+    discovery_errors: list[ValidationIssue] = []
     completed_queries = 0
+    if progress:
+        progress("Preparing search...", 0, 0)
     for category, queries in queries_by_category.items():
         for query in queries:
             completed_queries += 1
-            print(f"[DISCOVERY] ({completed_queries}/{total_queries}) {query}")
+            if progress:
+                progress("Finding businesses...", completed_queries, total_queries)
             try:
                 places = discovery.search(query)
                 raw_prospects.extend(build_place_prospect(place, category, query) for place in places)
                 print(f"[DISCOVERY] Found {len(places)} businesses")
             except Exception as exc:
                 print(f"[DISCOVERY] ERROR {query}: {exc}")
+                discovery_errors.append(ValidationIssue(
+                    "DISCOVERY", query, "provider_error", "", str(exc), "discovery", now_iso()
+                ))
 
     prospects = deduplicate_prospects(raw_prospects)
     prospects = [item for item in prospects if item.google_review_count >= config.min_reviews]
-    issues: list[ValidationIssue] = []
+    prospects = prospects[:config.max_results]
+    issues: list[ValidationIssue] = discovery_errors
     crawler = WebCrawler(config, issues)
     for index, prospect in enumerate(prospects, 1):
+        if progress:
+            progress("Validating websites...", index, len(prospects))
         print(f"[VALIDATION] {index}/{len(prospects)} {prospect.company_name}")
         crawl = crawler.validate_and_crawl(prospect)
         print(f"[CRAWL] {crawl.final_url or prospect.website_original} - {len(crawl.pages)} pages")
+        if progress:
+            progress("Analyzing opportunities...", index, len(prospects))
         data = extract_site_data(prospect, crawl)
+        if progress:
+            progress("Calculating AI Fit Scores...", index, len(prospects))
         apply_analysis(prospect, crawl, data, config)
         print(f"[ANALYSIS] Chat: {'YES' if data.has_chat else 'NO'} | Booking: {'YES' if data.has_booking else 'NO'} | Score: {prospect.ai_fit_score}")
 
-    finish = datetime.now().astimezone()
     counts = {tier: sum(item.opportunity_tier == tier for item in prospects) for tier in ("A+", "A", "B", "C", "D")}
-    run_summary = {
-        "run_id": run_id,
-        "start_timestamp": start.isoformat(timespec="seconds"),
-        "finish_timestamp": finish.isoformat(timespec="seconds"),
-        "search_queries": " | ".join(query for queries in queries_by_category.values() for query in queries),
-        "categories": "; ".join(queries_by_category),
+    summary = {
         "total_discovered": len(raw_prospects),
         "total_after_deduplication": len(prospects),
         "total_validated": sum(item.website_reachable for item in prospects),
@@ -1313,6 +1345,33 @@ def run_engine(args: argparse.Namespace, discovery: PlacesNewDiscovery | None = 
         "A+": counts["A+"], "A": counts["A"], "B": counts["B"], "C": counts["C"], "D": counts["D"],
         "demo_candidates": sum(item.ai_fit_score >= 80 for item in prospects),
         "outreach_candidates": sum(item.ai_fit_score >= 70 for item in prospects),
+    }
+    return prospects, issues, summary
+
+
+def run_engine(args: argparse.Namespace, discovery: PlacesNewDiscovery | None = None) -> Path:
+    start = datetime.now().astimezone()
+    config = Config(
+        max_pages_per_site=max(1, args.max_pages),
+        max_depth=max(0, args.max_depth),
+        request_timeout=max(1, args.timeout),
+        min_reviews=max(0, args.min_reviews),
+        max_results=max(1, min(500, args.max_results)),
+        output_dir=Path(args.output_dir),
+    )
+    queries_by_category = query_plan(args)
+    api_key = (args.api_key or os.getenv("GOOGLE_PLACES_API_KEY") or GOOGLE_PLACES_API_KEY).strip()
+    if not api_key:
+        raise SystemExit("ERROR: set GOOGLE_PLACES_API_KEY or provide --api-key.")
+    prospects, issues, counts = execute_search(queries_by_category, api_key, config, discovery=discovery)
+    finish = datetime.now().astimezone()
+    run_summary = {
+        "run_id": start.strftime("%Y%m%d%H%M%S"),
+        "start_timestamp": start.isoformat(timespec="seconds"),
+        "finish_timestamp": finish.isoformat(timespec="seconds"),
+        "search_queries": " | ".join(query for queries in queries_by_category.values() for query in queries),
+        "categories": "; ".join(queries_by_category),
+        **counts,
         "generated_file_path": "pending",
     }
     output_path = unique_output_path(config.output_dir, start)
