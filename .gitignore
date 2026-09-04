@@ -6,3 +6,4 @@ __pycache__/
 .pytest_cache/
 output/*.xlsx
 !output/.gitkeep
+US_B2B_Google_Places_Leads.xlsx

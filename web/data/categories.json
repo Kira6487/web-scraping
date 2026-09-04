@@ -1,0 +1,14 @@
+[
+  {"id": "real_estate", "label": "Real Estate", "group": "REAL ESTATE", "searchAliases": ["real estate agents"], "enabled": true},
+  {"id": "commercial_real_estate", "label": "Commercial Real Estate", "group": "REAL ESTATE", "searchAliases": ["commercial real estate"], "enabled": true},
+  {"id": "property_management", "label": "Property Management", "group": "REAL ESTATE", "searchAliases": ["property management companies"], "enabled": true},
+  {"id": "home_services", "label": "Home Services", "group": "HOME SERVICES", "searchAliases": ["home services companies"], "enabled": true},
+  {"id": "roofing", "label": "Roofing", "group": "HOME SERVICES", "searchAliases": ["roofing contractors", "roof repair"], "enabled": true},
+  {"id": "hvac", "label": "HVAC", "group": "HOME SERVICES", "searchAliases": ["HVAC services"], "enabled": true},
+  {"id": "plumbing", "label": "Plumbing", "group": "HOME SERVICES", "searchAliases": ["plumbers"], "enabled": true},
+  {"id": "remodeling", "label": "Remodeling", "group": "HOME SERVICES", "searchAliases": ["remodeling contractors"], "enabled": true},
+  {"id": "landscaping", "label": "Landscaping", "group": "HOME SERVICES", "searchAliases": ["landscaping companies"], "enabled": true},
+  {"id": "solar", "label": "Solar", "group": "HOME SERVICES", "searchAliases": ["solar installation companies"], "enabled": true},
+  {"id": "law_firms", "label": "Law Firms", "group": "PROFESSIONAL SERVICES", "searchAliases": ["law firms"], "enabled": true},
+  {"id": "professional_services", "label": "Professional Services", "group": "PROFESSIONAL SERVICES", "searchAliases": ["professional services companies"], "enabled": true}
+]

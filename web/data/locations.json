@@ -1,0 +1,3284 @@
+{
+  "source": "country-state-city@3.2.1",
+  "sourceLicense": "GPL-3.0",
+  "countries": {
+    "US": {
+      "label": "United States",
+      "regions": {
+        "AL": {
+          "label": "Alabama"
+        },
+        "AK": {
+          "label": "Alaska"
+        },
+        "AS": {
+          "label": "American Samoa"
+        },
+        "AZ": {
+          "label": "Arizona"
+        },
+        "AR": {
+          "label": "Arkansas"
+        },
+        "UM-81": {
+          "label": "Baker Island"
+        },
+        "CA": {
+          "label": "California"
+        },
+        "CO": {
+          "label": "Colorado"
+        },
+        "CT": {
+          "label": "Connecticut"
+        },
+        "DE": {
+          "label": "Delaware"
+        },
+        "DC": {
+          "label": "District of Columbia"
+        },
+        "FL": {
+          "label": "Florida"
+        },
+        "GA": {
+          "label": "Georgia"
+        },
+        "GU": {
+          "label": "Guam"
+        },
+        "HI": {
+          "label": "Hawaii"
+        },
+        "UM-84": {
+          "label": "Howland Island"
+        },
+        "ID": {
+          "label": "Idaho"
+        },
+        "IL": {
+          "label": "Illinois"
+        },
+        "IN": {
+          "label": "Indiana"
+        },
+        "IA": {
+          "label": "Iowa"
+        },
+        "UM-86": {
+          "label": "Jarvis Island"
+        },
+        "UM-67": {
+          "label": "Johnston Atoll"
+        },
+        "KS": {
+          "label": "Kansas"
+        },
+        "KY": {
+          "label": "Kentucky"
+        },
+        "UM-89": {
+          "label": "Kingman Reef"
+        },
+        "LA": {
+          "label": "Louisiana"
+        },
+        "ME": {
+          "label": "Maine"
+        },
+        "MD": {
+          "label": "Maryland"
+        },
+        "MA": {
+          "label": "Massachusetts"
+        },
+        "MI": {
+          "label": "Michigan"
+        },
+        "UM-71": {
+          "label": "Midway Atoll"
+        },
+        "MN": {
+          "label": "Minnesota"
+        },
+        "MS": {
+          "label": "Mississippi"
+        },
+        "MO": {
+          "label": "Missouri"
+        },
+        "MT": {
+          "label": "Montana"
+        },
+        "UM-76": {
+          "label": "Navassa Island"
+        },
+        "NE": {
+          "label": "Nebraska"
+        },
+        "NV": {
+          "label": "Nevada"
+        },
+        "NH": {
+          "label": "New Hampshire"
+        },
+        "NJ": {
+          "label": "New Jersey"
+        },
+        "NM": {
+          "label": "New Mexico"
+        },
+        "NY": {
+          "label": "New York"
+        },
+        "NC": {
+          "label": "North Carolina"
+        },
+        "ND": {
+          "label": "North Dakota"
+        },
+        "MP": {
+          "label": "Northern Mariana Islands"
+        },
+        "OH": {
+          "label": "Ohio"
+        },
+        "OK": {
+          "label": "Oklahoma"
+        },
+        "OR": {
+          "label": "Oregon"
+        },
+        "UM-95": {
+          "label": "Palmyra Atoll"
+        },
+        "PA": {
+          "label": "Pennsylvania"
+        },
+        "PR": {
+          "label": "Puerto Rico"
+        },
+        "RI": {
+          "label": "Rhode Island"
+        },
+        "SC": {
+          "label": "South Carolina"
+        },
+        "SD": {
+          "label": "South Dakota"
+        },
+        "TN": {
+          "label": "Tennessee"
+        },
+        "TX": {
+          "label": "Texas"
+        },
+        "UM": {
+          "label": "United States Minor Outlying Islands"
+        },
+        "VI": {
+          "label": "United States Virgin Islands"
+        },
+        "UT": {
+          "label": "Utah"
+        },
+        "VT": {
+          "label": "Vermont"
+        },
+        "VA": {
+          "label": "Virginia"
+        },
+        "UM-79": {
+          "label": "Wake Island"
+        },
+        "WA": {
+          "label": "Washington"
+        },
+        "WV": {
+          "label": "West Virginia"
+        },
+        "WI": {
+          "label": "Wisconsin"
+        },
+        "WY": {
+          "label": "Wyoming"
+        }
+      },
+      "citiesFile": "cities/US.json"
+    },
+    "PE": {
+      "label": "Peru",
+      "regions": {
+        "AMA": {
+          "label": "Amazonas"
+        },
+        "ANC": {
+          "label": "Áncash"
+        },
+        "APU": {
+          "label": "Apurímac"
+        },
+        "ARE": {
+          "label": "Arequipa"
+        },
+        "AYA": {
+          "label": "Ayacucho"
+        },
+        "CAJ": {
+          "label": "Cajamarca"
+        },
+        "CAL": {
+          "label": "Callao"
+        },
+        "CUS": {
+          "label": "Cusco"
+        },
+        "HUV": {
+          "label": "Huancavelica"
+        },
+        "HUC": {
+          "label": "Huanuco"
+        },
+        "ICA": {
+          "label": "Ica"
+        },
+        "JUN": {
+          "label": "Junín"
+        },
+        "LAL": {
+          "label": "La Libertad"
+        },
+        "LAM": {
+          "label": "Lambayeque"
+        },
+        "LIM": {
+          "label": "Lima"
+        },
+        "LOR": {
+          "label": "Loreto"
+        },
+        "MDD": {
+          "label": "Madre de Dios"
+        },
+        "MOQ": {
+          "label": "Moquegua"
+        },
+        "PAS": {
+          "label": "Pasco"
+        },
+        "PIU": {
+          "label": "Piura"
+        },
+        "PUN": {
+          "label": "Puno"
+        },
+        "SAM": {
+          "label": "San Martín"
+        },
+        "TAC": {
+          "label": "Tacna"
+        },
+        "TUM": {
+          "label": "Tumbes"
+        },
+        "UCA": {
+          "label": "Ucayali"
+        }
+      },
+      "citiesFile": "cities/PE.json"
+    },
+    "CA": {
+      "label": "Canada",
+      "regions": {
+        "AB": {
+          "label": "Alberta"
+        },
+        "BC": {
+          "label": "British Columbia"
+        },
+        "MB": {
+          "label": "Manitoba"
+        },
+        "NB": {
+          "label": "New Brunswick"
+        },
+        "NL": {
+          "label": "Newfoundland and Labrador"
+        },
+        "NT": {
+          "label": "Northwest Territories"
+        },
+        "NS": {
+          "label": "Nova Scotia"
+        },
+        "NU": {
+          "label": "Nunavut"
+        },
+        "ON": {
+          "label": "Ontario"
+        },
+        "PE": {
+          "label": "Prince Edward Island"
+        },
+        "QC": {
+          "label": "Quebec"
+        },
+        "SK": {
+          "label": "Saskatchewan"
+        },
+        "YT": {
+          "label": "Yukon"
+        }
+      },
+      "citiesFile": "cities/CA.json"
+    },
+    "MX": {
+      "label": "Mexico",
+      "regions": {
+        "AGU": {
+          "label": "Aguascalientes"
+        },
+        "BCN": {
+          "label": "Baja California"
+        },
+        "BCS": {
+          "label": "Baja California Sur"
+        },
+        "CAM": {
+          "label": "Campeche"
+        },
+        "CHP": {
+          "label": "Chiapas"
+        },
+        "CHH": {
+          "label": "Chihuahua"
+        },
+        "CDMX": {
+          "label": "Ciudad de México"
+        },
+        "COA": {
+          "label": "Coahuila de Zaragoza"
+        },
+        "COL": {
+          "label": "Colima"
+        },
+        "DUR": {
+          "label": "Durango"
+        },
+        "MEX": {
+          "label": "Estado de México"
+        },
+        "GUA": {
+          "label": "Guanajuato"
+        },
+        "GRO": {
+          "label": "Guerrero"
+        },
+        "HID": {
+          "label": "Hidalgo"
+        },
+        "JAL": {
+          "label": "Jalisco"
+        },
+        "MIC": {
+          "label": "Michoacán de Ocampo"
+        },
+        "MOR": {
+          "label": "Morelos"
+        },
+        "NAY": {
+          "label": "Nayarit"
+        },
+        "NLE": {
+          "label": "Nuevo León"
+        },
+        "OAX": {
+          "label": "Oaxaca"
+        },
+        "PUE": {
+          "label": "Puebla"
+        },
+        "QUE": {
+          "label": "Querétaro"
+        },
+        "ROO": {
+          "label": "Quintana Roo"
+        },
+        "SLP": {
+          "label": "San Luis Potosí"
+        },
+        "SIN": {
+          "label": "Sinaloa"
+        },
+        "SON": {
+          "label": "Sonora"
+        },
+        "TAB": {
+          "label": "Tabasco"
+        },
+        "TAM": {
+          "label": "Tamaulipas"
+        },
+        "TLA": {
+          "label": "Tlaxcala"
+        },
+        "VER": {
+          "label": "Veracruz de Ignacio de la Llave"
+        },
+        "YUC": {
+          "label": "Yucatán"
+        },
+        "ZAC": {
+          "label": "Zacatecas"
+        }
+      },
+      "citiesFile": "cities/MX.json"
+    },
+    "AR": {
+      "label": "Argentina",
+      "regions": {
+        "B": {
+          "label": "Buenos Aires"
+        },
+        "K": {
+          "label": "Catamarca"
+        },
+        "H": {
+          "label": "Chaco"
+        },
+        "U": {
+          "label": "Chubut"
+        },
+        "C": {
+          "label": "Ciudad Autónoma de Buenos Aires"
+        },
+        "X": {
+          "label": "Córdoba"
+        },
+        "W": {
+          "label": "Corrientes"
+        },
+        "E": {
+          "label": "Entre Ríos"
+        },
+        "P": {
+          "label": "Formosa"
+        },
+        "Y": {
+          "label": "Jujuy"
+        },
+        "L": {
+          "label": "La Pampa"
+        },
+        "F": {
+          "label": "La Rioja"
+        },
+        "M": {
+          "label": "Mendoza"
+        },
+        "N": {
+          "label": "Misiones"
+        },
+        "Q": {
+          "label": "Neuquén"
+        },
+        "R": {
+          "label": "Río Negro"
+        },
+        "A": {
+          "label": "Salta"
+        },
+        "J": {
+          "label": "San Juan"
+        },
+        "D": {
+          "label": "San Luis"
+        },
+        "Z": {
+          "label": "Santa Cruz"
+        },
+        "S": {
+          "label": "Santa Fe"
+        },
+        "G": {
+          "label": "Santiago del Estero"
+        },
+        "V": {
+          "label": "Tierra del Fuego"
+        },
+        "T": {
+          "label": "Tucumán"
+        }
+      },
+      "citiesFile": "cities/AR.json"
+    },
+    "AU": {
+      "label": "Australia",
+      "regions": {
+        "ACT": {
+          "label": "Australian Capital Territory"
+        },
+        "NSW": {
+          "label": "New South Wales"
+        },
+        "NT": {
+          "label": "Northern Territory"
+        },
+        "QLD": {
+          "label": "Queensland"
+        },
+        "SA": {
+          "label": "South Australia"
+        },
+        "TAS": {
+          "label": "Tasmania"
+        },
+        "VIC": {
+          "label": "Victoria"
+        },
+        "WA": {
+          "label": "Western Australia"
+        }
+      },
+      "citiesFile": "cities/AU.json"
+    },
+    "AT": {
+      "label": "Austria",
+      "regions": {
+        "1": {
+          "label": "Burgenland"
+        },
+        "2": {
+          "label": "Carinthia"
+        },
+        "3": {
+          "label": "Lower Austria"
+        },
+        "4": {
+          "label": "Upper Austria"
+        },
+        "5": {
+          "label": "Salzburg"
+        },
+        "6": {
+          "label": "Styria"
+        },
+        "7": {
+          "label": "Tyrol"
+        },
+        "8": {
+          "label": "Vorarlberg"
+        },
+        "9": {
+          "label": "Vienna"
+        }
+      },
+      "citiesFile": "cities/AT.json"
+    },
+    "BE": {
+      "label": "Belgium",
+      "regions": {
+        "VAN": {
+          "label": "Antwerp"
+        },
+        "BRU": {
+          "label": "Brussels-Capital Region"
+        },
+        "VOV": {
+          "label": "East Flanders"
+        },
+        "VLG": {
+          "label": "Flanders"
+        },
+        "VBR": {
+          "label": "Flemish Brabant"
+        },
+        "WHT": {
+          "label": "Hainaut"
+        },
+        "WLG": {
+          "label": "Liège"
+        },
+        "VLI": {
+          "label": "Limburg"
+        },
+        "WLX": {
+          "label": "Luxembourg"
+        },
+        "WNA": {
+          "label": "Namur"
+        },
+        "WAL": {
+          "label": "Wallonia"
+        },
+        "WBR": {
+          "label": "Walloon Brabant"
+        },
+        "VWV": {
+          "label": "West Flanders"
+        }
+      },
+      "citiesFile": "cities/BE.json"
+    },
+    "BO": {
+      "label": "Bolivia",
+      "regions": {
+        "B": {
+          "label": "Beni Department"
+        },
+        "H": {
+          "label": "Chuquisaca Department"
+        },
+        "C": {
+          "label": "Cochabamba Department"
+        },
+        "L": {
+          "label": "La Paz Department"
+        },
+        "O": {
+          "label": "Oruro Department"
+        },
+        "N": {
+          "label": "Pando Department"
+        },
+        "P": {
+          "label": "Potosí Department"
+        },
+        "S": {
+          "label": "Santa Cruz Department"
+        },
+        "T": {
+          "label": "Tarija Department"
+        }
+      },
+      "citiesFile": "cities/BO.json"
+    },
+    "BR": {
+      "label": "Brazil",
+      "regions": {
+        "AC": {
+          "label": "Acre"
+        },
+        "AL": {
+          "label": "Alagoas"
+        },
+        "AP": {
+          "label": "Amapá"
+        },
+        "AM": {
+          "label": "Amazonas"
+        },
+        "BA": {
+          "label": "Bahia"
+        },
+        "CE": {
+          "label": "Ceará"
+        },
+        "DF": {
+          "label": "Distrito Federal"
+        },
+        "ES": {
+          "label": "Espírito Santo"
+        },
+        "GO": {
+          "label": "Goiás"
+        },
+        "MA": {
+          "label": "Maranhão"
+        },
+        "MT": {
+          "label": "Mato Grosso"
+        },
+        "MS": {
+          "label": "Mato Grosso do Sul"
+        },
+        "MG": {
+          "label": "Minas Gerais"
+        },
+        "PA": {
+          "label": "Pará"
+        },
+        "PB": {
+          "label": "Paraíba"
+        },
+        "PR": {
+          "label": "Paraná"
+        },
+        "PE": {
+          "label": "Pernambuco"
+        },
+        "PI": {
+          "label": "Piauí"
+        },
+        "RJ": {
+          "label": "Rio de Janeiro"
+        },
+        "RN": {
+          "label": "Rio Grande do Norte"
+        },
+        "RS": {
+          "label": "Rio Grande do Sul"
+        },
+        "RO": {
+          "label": "Rondônia"
+        },
+        "RR": {
+          "label": "Roraima"
+        },
+        "SC": {
+          "label": "Santa Catarina"
+        },
+        "SP": {
+          "label": "São Paulo"
+        },
+        "SE": {
+          "label": "Sergipe"
+        },
+        "TO": {
+          "label": "Tocantins"
+        }
+      },
+      "citiesFile": "cities/BR.json"
+    },
+    "CL": {
+      "label": "Chile",
+      "regions": {
+        "AI": {
+          "label": "Aisén del General Carlos Ibañez del Campo"
+        },
+        "AN": {
+          "label": "Antofagasta"
+        },
+        "AP": {
+          "label": "Arica y Parinacota"
+        },
+        "AT": {
+          "label": "Atacama"
+        },
+        "BI": {
+          "label": "Biobío"
+        },
+        "CO": {
+          "label": "Coquimbo"
+        },
+        "AR": {
+          "label": "La Araucanía"
+        },
+        "LI": {
+          "label": "Libertador General Bernardo O'Higgins"
+        },
+        "LL": {
+          "label": "Los Lagos"
+        },
+        "LR": {
+          "label": "Los Ríos"
+        },
+        "MA": {
+          "label": "Magallanes y de la Antártica Chilena"
+        },
+        "ML": {
+          "label": "Maule"
+        },
+        "NB": {
+          "label": "Ñuble"
+        },
+        "RM": {
+          "label": "Región Metropolitana de Santiago"
+        },
+        "TA": {
+          "label": "Tarapacá"
+        },
+        "VS": {
+          "label": "Valparaíso"
+        }
+      },
+      "citiesFile": "cities/CL.json"
+    },
+    "CO": {
+      "label": "Colombia",
+      "regions": {
+        "AMA": {
+          "label": "Amazonas"
+        },
+        "ANT": {
+          "label": "Antioquia"
+        },
+        "ARA": {
+          "label": "Arauca"
+        },
+        "SAP": {
+          "label": "Archipiélago de San Andrés, Providencia y Santa Catalina"
+        },
+        "ATL": {
+          "label": "Atlántico"
+        },
+        "DC": {
+          "label": "Bogotá D.C."
+        },
+        "BOL": {
+          "label": "Bolívar"
+        },
+        "BOY": {
+          "label": "Boyacá"
+        },
+        "CAL": {
+          "label": "Caldas"
+        },
+        "CAQ": {
+          "label": "Caquetá"
+        },
+        "CAS": {
+          "label": "Casanare"
+        },
+        "CAU": {
+          "label": "Cauca"
+        },
+        "CES": {
+          "label": "Cesar"
+        },
+        "CHO": {
+          "label": "Chocó"
+        },
+        "COR": {
+          "label": "Córdoba"
+        },
+        "CUN": {
+          "label": "Cundinamarca"
+        },
+        "GUA": {
+          "label": "Guainía"
+        },
+        "GUV": {
+          "label": "Guaviare"
+        },
+        "HUI": {
+          "label": "Huila"
+        },
+        "LAG": {
+          "label": "La Guajira"
+        },
+        "MAG": {
+          "label": "Magdalena"
+        },
+        "MET": {
+          "label": "Meta"
+        },
+        "NAR": {
+          "label": "Nariño"
+        },
+        "NSA": {
+          "label": "Norte de Santander"
+        },
+        "PUT": {
+          "label": "Putumayo"
+        },
+        "QUI": {
+          "label": "Quindío"
+        },
+        "RIS": {
+          "label": "Risaralda"
+        },
+        "SAN": {
+          "label": "Santander"
+        },
+        "SUC": {
+          "label": "Sucre"
+        },
+        "TOL": {
+          "label": "Tolima"
+        },
+        "VAC": {
+          "label": "Valle del Cauca"
+        },
+        "VAU": {
+          "label": "Vaupés"
+        },
+        "VID": {
+          "label": "Vichada"
+        }
+      },
+      "citiesFile": "cities/CO.json"
+    },
+    "CR": {
+      "label": "Costa Rica",
+      "regions": {
+        "A": {
+          "label": "Alajuela Province"
+        },
+        "G": {
+          "label": "Guanacaste Province"
+        },
+        "H": {
+          "label": "Heredia Province"
+        },
+        "L": {
+          "label": "Limón Province"
+        },
+        "C": {
+          "label": "Provincia de Cartago"
+        },
+        "P": {
+          "label": "Puntarenas Province"
+        },
+        "SJ": {
+          "label": "San José Province"
+        }
+      },
+      "citiesFile": "cities/CR.json"
+    },
+    "DO": {
+      "label": "Dominican Republic",
+      "regions": {
+        "10": {
+          "label": "Independencia"
+        },
+        "11": {
+          "label": "La Altagracia Province"
+        },
+        "12": {
+          "label": "La Romana Province"
+        },
+        "13": {
+          "label": "La Vega Province"
+        },
+        "14": {
+          "label": "María Trinidad Sánchez Province"
+        },
+        "15": {
+          "label": "Monte Cristi Province"
+        },
+        "16": {
+          "label": "Pedernales Province"
+        },
+        "17": {
+          "label": "Peravia Province"
+        },
+        "18": {
+          "label": "Puerto Plata Province"
+        },
+        "19": {
+          "label": "Hermanas Mirabal Province"
+        },
+        "20": {
+          "label": "Samaná Province"
+        },
+        "21": {
+          "label": "San Cristóbal Province"
+        },
+        "22": {
+          "label": "San Juan Province"
+        },
+        "23": {
+          "label": "San Pedro de Macorís"
+        },
+        "24": {
+          "label": "Sánchez Ramírez Province"
+        },
+        "25": {
+          "label": "Santiago Province"
+        },
+        "26": {
+          "label": "Santiago Rodríguez Province"
+        },
+        "27": {
+          "label": "Valverde Province"
+        },
+        "28": {
+          "label": "Monseñor Nouel Province"
+        },
+        "29": {
+          "label": "Monte Plata Province"
+        },
+        "30": {
+          "label": "Hato Mayor Province"
+        },
+        "31": {
+          "label": "San José de Ocoa Province"
+        },
+        "32": {
+          "label": "Santo Domingo Province"
+        },
+        "02": {
+          "label": "Azua Province"
+        },
+        "03": {
+          "label": "Baoruco Province"
+        },
+        "04": {
+          "label": "Barahona Province"
+        },
+        "05": {
+          "label": "Dajabón Province"
+        },
+        "01": {
+          "label": "Distrito Nacional"
+        },
+        "06": {
+          "label": "Duarte Province"
+        },
+        "08": {
+          "label": "El Seibo Province"
+        },
+        "09": {
+          "label": "Espaillat Province"
+        }
+      },
+      "citiesFile": "cities/DO.json"
+    },
+    "EC": {
+      "label": "Ecuador",
+      "regions": {
+        "A": {
+          "label": "Azuay"
+        },
+        "B": {
+          "label": "Bolívar"
+        },
+        "F": {
+          "label": "Cañar"
+        },
+        "C": {
+          "label": "Carchi"
+        },
+        "H": {
+          "label": "Chimborazo"
+        },
+        "X": {
+          "label": "Cotopaxi"
+        },
+        "O": {
+          "label": "El Oro"
+        },
+        "E": {
+          "label": "Esmeraldas"
+        },
+        "W": {
+          "label": "Galápagos"
+        },
+        "G": {
+          "label": "Guayas"
+        },
+        "I": {
+          "label": "Imbabura"
+        },
+        "L": {
+          "label": "Loja"
+        },
+        "R": {
+          "label": "Los Ríos"
+        },
+        "M": {
+          "label": "Manabí"
+        },
+        "S": {
+          "label": "Morona-Santiago"
+        },
+        "N": {
+          "label": "Napo"
+        },
+        "D": {
+          "label": "Orellana"
+        },
+        "Y": {
+          "label": "Pastaza"
+        },
+        "P": {
+          "label": "Pichincha"
+        },
+        "SE": {
+          "label": "Santa Elena"
+        },
+        "SD": {
+          "label": "Santo Domingo de los Tsáchilas"
+        },
+        "U": {
+          "label": "Sucumbíos"
+        },
+        "T": {
+          "label": "Tungurahua"
+        },
+        "Z": {
+          "label": "Zamora Chinchipe"
+        }
+      },
+      "citiesFile": "cities/EC.json"
+    },
+    "FR": {
+      "label": "France",
+      "regions": {
+        "10": {
+          "label": "Aube"
+        },
+        "11": {
+          "label": "Aude"
+        },
+        "12": {
+          "label": "Aveyron"
+        },
+        "13": {
+          "label": "Bouches-du-Rhône"
+        },
+        "14": {
+          "label": "Calvados"
+        },
+        "15": {
+          "label": "Cantal"
+        },
+        "16": {
+          "label": "Charente"
+        },
+        "17": {
+          "label": "Charente-Maritime"
+        },
+        "18": {
+          "label": "Cher"
+        },
+        "19": {
+          "label": "Corrèze"
+        },
+        "21": {
+          "label": "Côte-d'Or"
+        },
+        "22": {
+          "label": "Côtes-d'Armor"
+        },
+        "23": {
+          "label": "Creuse"
+        },
+        "24": {
+          "label": "Dordogne"
+        },
+        "25": {
+          "label": "Doubs"
+        },
+        "26": {
+          "label": "Drôme"
+        },
+        "27": {
+          "label": "Eure"
+        },
+        "28": {
+          "label": "Eure-et-Loir"
+        },
+        "29": {
+          "label": "Finistère"
+        },
+        "30": {
+          "label": "Gard"
+        },
+        "31": {
+          "label": "Haute-Garonne"
+        },
+        "32": {
+          "label": "Gers"
+        },
+        "33": {
+          "label": "Gironde"
+        },
+        "34": {
+          "label": "Hérault"
+        },
+        "35": {
+          "label": "Ille-et-Vilaine"
+        },
+        "36": {
+          "label": "Indre"
+        },
+        "37": {
+          "label": "Indre-et-Loire"
+        },
+        "38": {
+          "label": "Isère"
+        },
+        "39": {
+          "label": "Jura"
+        },
+        "40": {
+          "label": "Landes"
+        },
+        "41": {
+          "label": "Loir-et-Cher"
+        },
+        "42": {
+          "label": "Loire"
+        },
+        "43": {
+          "label": "Haute-Loire"
+        },
+        "44": {
+          "label": "Loire-Atlantique"
+        },
+        "45": {
+          "label": "Loiret"
+        },
+        "46": {
+          "label": "Lot"
+        },
+        "47": {
+          "label": "Lot-et-Garonne"
+        },
+        "48": {
+          "label": "Lozère"
+        },
+        "49": {
+          "label": "Maine-et-Loire"
+        },
+        "50": {
+          "label": "Manche"
+        },
+        "51": {
+          "label": "Marne"
+        },
+        "52": {
+          "label": "Haute-Marne"
+        },
+        "53": {
+          "label": "Mayenne"
+        },
+        "54": {
+          "label": "Meurthe-et-Moselle"
+        },
+        "55": {
+          "label": "Meuse"
+        },
+        "56": {
+          "label": "Morbihan"
+        },
+        "57": {
+          "label": "Moselle"
+        },
+        "58": {
+          "label": "Nièvre"
+        },
+        "59": {
+          "label": "Nord"
+        },
+        "60": {
+          "label": "Oise"
+        },
+        "61": {
+          "label": "Orne"
+        },
+        "62": {
+          "label": "Pas-de-Calais"
+        },
+        "63": {
+          "label": "Puy-de-Dôme"
+        },
+        "64": {
+          "label": "Pyrénées-Atlantiques"
+        },
+        "65": {
+          "label": "Hautes-Pyrénées"
+        },
+        "66": {
+          "label": "Pyrénées-Orientales"
+        },
+        "67": {
+          "label": "Bas-Rhin"
+        },
+        "68": {
+          "label": "Haut-Rhin"
+        },
+        "69": {
+          "label": "Rhône"
+        },
+        "70": {
+          "label": "Haute-Saône"
+        },
+        "71": {
+          "label": "Saône-et-Loire"
+        },
+        "72": {
+          "label": "Sarthe"
+        },
+        "73": {
+          "label": "Savoie"
+        },
+        "74": {
+          "label": "Haute-Savoie"
+        },
+        "76": {
+          "label": "Seine-Maritime"
+        },
+        "77": {
+          "label": "Seine-et-Marne"
+        },
+        "78": {
+          "label": "Yvelines"
+        },
+        "79": {
+          "label": "Deux-Sèvres"
+        },
+        "80": {
+          "label": "Somme"
+        },
+        "81": {
+          "label": "Tarn"
+        },
+        "82": {
+          "label": "Tarn-et-Garonne"
+        },
+        "83": {
+          "label": "Var"
+        },
+        "84": {
+          "label": "Vaucluse"
+        },
+        "85": {
+          "label": "Vendée"
+        },
+        "86": {
+          "label": "Vienne"
+        },
+        "87": {
+          "label": "Haute-Vienne"
+        },
+        "88": {
+          "label": "Vosges"
+        },
+        "89": {
+          "label": "Yonne"
+        },
+        "90": {
+          "label": "Territoire de Belfort"
+        },
+        "91": {
+          "label": "Essonne"
+        },
+        "92": {
+          "label": "Hauts-de-Seine"
+        },
+        "93": {
+          "label": "Seine-Saint-Denis"
+        },
+        "94": {
+          "label": "Val-de-Marne"
+        },
+        "95": {
+          "label": "Val-d'Oise"
+        },
+        "971": {
+          "label": "Guadeloupe"
+        },
+        "972": {
+          "label": "Martinique"
+        },
+        "973": {
+          "label": "French Guiana"
+        },
+        "974": {
+          "label": "La Réunion"
+        },
+        "976": {
+          "label": "Mayotte"
+        },
+        "01": {
+          "label": "Ain"
+        },
+        "02": {
+          "label": "Aisne"
+        },
+        "03": {
+          "label": "Allier"
+        },
+        "04": {
+          "label": "Alpes-de-Haute-Provence"
+        },
+        "06": {
+          "label": "Alpes-Maritimes"
+        },
+        "6AE": {
+          "label": "Alsace"
+        },
+        "07": {
+          "label": "Ardèche"
+        },
+        "08": {
+          "label": "Ardennes"
+        },
+        "09": {
+          "label": "Ariège"
+        },
+        "ARA": {
+          "label": "Auvergne-Rhône-Alpes"
+        },
+        "BFC": {
+          "label": "Bourgogne-Franche-Comté"
+        },
+        "BRE": {
+          "label": "Bretagne"
+        },
+        "CVL": {
+          "label": "Centre-Val de Loire"
+        },
+        "CP": {
+          "label": "Clipperton"
+        },
+        "20R": {
+          "label": "Corse"
+        },
+        "2A": {
+          "label": "Corse-du-Sud"
+        },
+        "PF": {
+          "label": "French Polynesia"
+        },
+        "TF": {
+          "label": "French Southern and Antarctic Lands"
+        },
+        "GES": {
+          "label": "Grand-Est"
+        },
+        "2B": {
+          "label": "Haute-Corse"
+        },
+        "05": {
+          "label": "Hautes-Alpes"
+        },
+        "HDF": {
+          "label": "Hauts-de-France"
+        },
+        "IDF": {
+          "label": "Île-de-France"
+        },
+        "69M": {
+          "label": "Métropole de Lyon"
+        },
+        "NOR": {
+          "label": "Normandie"
+        },
+        "NAQ": {
+          "label": "Nouvelle-Aquitaine"
+        },
+        "OCC": {
+          "label": "Occitanie"
+        },
+        "75C": {
+          "label": "Paris"
+        },
+        "PDL": {
+          "label": "Pays-de-la-Loire"
+        },
+        "PAC": {
+          "label": "Provence-Alpes-Côte-d’Azur"
+        },
+        "PM": {
+          "label": "Saint Pierre and Miquelon"
+        },
+        "BL": {
+          "label": "Saint-Barthélemy"
+        },
+        "MF": {
+          "label": "Saint-Martin"
+        },
+        "WF": {
+          "label": "Wallis and Futuna"
+        }
+      },
+      "citiesFile": "cities/FR.json"
+    },
+    "DE": {
+      "label": "Germany",
+      "regions": {
+        "BW": {
+          "label": "Baden-Württemberg"
+        },
+        "BY": {
+          "label": "Bavaria"
+        },
+        "BE": {
+          "label": "Berlin"
+        },
+        "BB": {
+          "label": "Brandenburg"
+        },
+        "HB": {
+          "label": "Bremen"
+        },
+        "HH": {
+          "label": "Hamburg"
+        },
+        "HE": {
+          "label": "Hesse"
+        },
+        "NI": {
+          "label": "Lower Saxony"
+        },
+        "MV": {
+          "label": "Mecklenburg-Vorpommern"
+        },
+        "NW": {
+          "label": "North Rhine-Westphalia"
+        },
+        "RP": {
+          "label": "Rhineland-Palatinate"
+        },
+        "SL": {
+          "label": "Saarland"
+        },
+        "SN": {
+          "label": "Saxony"
+        },
+        "ST": {
+          "label": "Saxony-Anhalt"
+        },
+        "SH": {
+          "label": "Schleswig-Holstein"
+        },
+        "TH": {
+          "label": "Thuringia"
+        }
+      },
+      "citiesFile": "cities/DE.json"
+    },
+    "IE": {
+      "label": "Ireland",
+      "regions": {
+        "CW": {
+          "label": "Carlow"
+        },
+        "CN": {
+          "label": "Cavan"
+        },
+        "CE": {
+          "label": "Clare"
+        },
+        "C": {
+          "label": "Connacht"
+        },
+        "CO": {
+          "label": "Cork"
+        },
+        "DL": {
+          "label": "Donegal"
+        },
+        "D": {
+          "label": "Dublin"
+        },
+        "G": {
+          "label": "Galway"
+        },
+        "KY": {
+          "label": "Kerry"
+        },
+        "KE": {
+          "label": "Kildare"
+        },
+        "KK": {
+          "label": "Kilkenny"
+        },
+        "LS": {
+          "label": "Laois"
+        },
+        "L": {
+          "label": "Leinster"
+        },
+        "LK": {
+          "label": "Limerick"
+        },
+        "LD": {
+          "label": "Longford"
+        },
+        "LH": {
+          "label": "Louth"
+        },
+        "MO": {
+          "label": "Mayo"
+        },
+        "MH": {
+          "label": "Meath"
+        },
+        "MN": {
+          "label": "Monaghan"
+        },
+        "M": {
+          "label": "Munster"
+        },
+        "OY": {
+          "label": "Offaly"
+        },
+        "RN": {
+          "label": "Roscommon"
+        },
+        "SO": {
+          "label": "Sligo"
+        },
+        "TA": {
+          "label": "Tipperary"
+        },
+        "U": {
+          "label": "Ulster"
+        },
+        "WD": {
+          "label": "Waterford"
+        },
+        "WH": {
+          "label": "Westmeath"
+        },
+        "WX": {
+          "label": "Wexford"
+        },
+        "WW": {
+          "label": "Wicklow"
+        }
+      },
+      "citiesFile": "cities/IE.json"
+    },
+    "IT": {
+      "label": "Italy",
+      "regions": {
+        "21": {
+          "label": "Piedmont"
+        },
+        "23": {
+          "label": "Aosta Valley"
+        },
+        "25": {
+          "label": "Lombardy"
+        },
+        "32": {
+          "label": "Trentino-South Tyrol"
+        },
+        "34": {
+          "label": "Veneto"
+        },
+        "36": {
+          "label": "Friuli–Venezia Giulia"
+        },
+        "42": {
+          "label": "Liguria"
+        },
+        "45": {
+          "label": "Emilia-Romagna"
+        },
+        "52": {
+          "label": "Tuscany"
+        },
+        "55": {
+          "label": "Umbria"
+        },
+        "57": {
+          "label": "Marche"
+        },
+        "62": {
+          "label": "Lazio"
+        },
+        "65": {
+          "label": "Abruzzo"
+        },
+        "67": {
+          "label": "Molise"
+        },
+        "72": {
+          "label": "Campania"
+        },
+        "75": {
+          "label": "Apulia"
+        },
+        "77": {
+          "label": "Basilicata"
+        },
+        "78": {
+          "label": "Calabria"
+        },
+        "82": {
+          "label": "Sicily"
+        },
+        "88": {
+          "label": "Sardinia"
+        },
+        "BN": {
+          "label": "Benevento Province"
+        },
+        "AG": {
+          "label": "Libero consorzio comunale di Agrigento"
+        },
+        "CL": {
+          "label": "Libero consorzio comunale di Caltanissetta"
+        },
+        "EN": {
+          "label": "Libero consorzio comunale di Enna"
+        },
+        "RG": {
+          "label": "Libero consorzio comunale di Ragusa"
+        },
+        "SR": {
+          "label": "Libero consorzio comunale di Siracusa"
+        },
+        "TP": {
+          "label": "Libero consorzio comunale di Trapani"
+        },
+        "BA": {
+          "label": "Metropolitan City of Bari"
+        },
+        "BO": {
+          "label": "Metropolitan City of Bologna"
+        },
+        "CA": {
+          "label": "Metropolitan City of Cagliari"
+        },
+        "CT": {
+          "label": "Metropolitan City of Catania"
+        },
+        "FI": {
+          "label": "Metropolitan City of Florence"
+        },
+        "GE": {
+          "label": "Metropolitan City of Genoa"
+        },
+        "ME": {
+          "label": "Metropolitan City of Messina"
+        },
+        "MI": {
+          "label": "Metropolitan City of Milan"
+        },
+        "NA": {
+          "label": "Metropolitan City of Naples"
+        },
+        "PA": {
+          "label": "Metropolitan City of Palermo"
+        },
+        "RC": {
+          "label": "Metropolitan City of Reggio Calabria"
+        },
+        "RM": {
+          "label": "Metropolitan City of Rome"
+        },
+        "TO": {
+          "label": "Metropolitan City of Turin"
+        },
+        "VE": {
+          "label": "Metropolitan City of Venice"
+        },
+        "PU": {
+          "label": "Pesaro and Urbino Province"
+        },
+        "AL": {
+          "label": "Province of Alessandria"
+        },
+        "AN": {
+          "label": "Province of Ancona"
+        },
+        "AP": {
+          "label": "Province of Ascoli Piceno"
+        },
+        "AT": {
+          "label": "Province of Asti"
+        },
+        "AV": {
+          "label": "Province of Avellino"
+        },
+        "BT": {
+          "label": "Province of Barletta-Andria-Trani"
+        },
+        "BL": {
+          "label": "Province of Belluno"
+        },
+        "BG": {
+          "label": "Province of Bergamo"
+        },
+        "BI": {
+          "label": "Province of Biella"
+        },
+        "BS": {
+          "label": "Province of Brescia"
+        },
+        "BR": {
+          "label": "Province of Brindisi"
+        },
+        "CB": {
+          "label": "Province of Campobasso"
+        },
+        "CI": {
+          "label": "Province of Carbonia-Iglesias"
+        },
+        "CE": {
+          "label": "Province of Caserta"
+        },
+        "CZ": {
+          "label": "Province of Catanzaro"
+        },
+        "CH": {
+          "label": "Province of Chieti"
+        },
+        "CO": {
+          "label": "Province of Como"
+        },
+        "CS": {
+          "label": "Province of Cosenza"
+        },
+        "CR": {
+          "label": "Province of Cremona"
+        },
+        "KR": {
+          "label": "Province of Crotone"
+        },
+        "CN": {
+          "label": "Province of Cuneo"
+        },
+        "FM": {
+          "label": "Province of Fermo"
+        },
+        "FE": {
+          "label": "Province of Ferrara"
+        },
+        "FG": {
+          "label": "Province of Foggia"
+        },
+        "FC": {
+          "label": "Province of Forlì-Cesena"
+        },
+        "FR": {
+          "label": "Province of Frosinone"
+        },
+        "GO": {
+          "label": "Province of Gorizia"
+        },
+        "GR": {
+          "label": "Province of Grosseto"
+        },
+        "IM": {
+          "label": "Province of Imperia"
+        },
+        "IS": {
+          "label": "Province of Isernia"
+        },
+        "AQ": {
+          "label": "Province of L'Aquila"
+        },
+        "SP": {
+          "label": "Province of La Spezia"
+        },
+        "LT": {
+          "label": "Province of Latina"
+        },
+        "LE": {
+          "label": "Province of Lecce"
+        },
+        "LC": {
+          "label": "Province of Lecco"
+        },
+        "LI": {
+          "label": "Province of Livorno"
+        },
+        "LO": {
+          "label": "Province of Lodi"
+        },
+        "LU": {
+          "label": "Province of Lucca"
+        },
+        "MC": {
+          "label": "Province of Macerata"
+        },
+        "MN": {
+          "label": "Province of Mantua"
+        },
+        "MS": {
+          "label": "Province of Massa and Carrara"
+        },
+        "MT": {
+          "label": "Province of Matera"
+        },
+        "VS": {
+          "label": "Province of Medio Campidano"
+        },
+        "MO": {
+          "label": "Province of Modena"
+        },
+        "MB": {
+          "label": "Province of Monza and Brianza"
+        },
+        "NO": {
+          "label": "Province of Novara"
+        },
+        "NU": {
+          "label": "Province of Nuoro"
+        },
+        "OG": {
+          "label": "Province of Ogliastra"
+        },
+        "OT": {
+          "label": "Province of Olbia-Tempio"
+        },
+        "OR": {
+          "label": "Province of Oristano"
+        },
+        "PD": {
+          "label": "Province of Padua"
+        },
+        "PR": {
+          "label": "Province of Parma"
+        },
+        "PV": {
+          "label": "Province of Pavia"
+        },
+        "PG": {
+          "label": "Province of Perugia"
+        },
+        "PE": {
+          "label": "Province of Pescara"
+        },
+        "PC": {
+          "label": "Province of Piacenza"
+        },
+        "PI": {
+          "label": "Province of Pisa"
+        },
+        "PT": {
+          "label": "Province of Pistoia"
+        },
+        "PN": {
+          "label": "Province of Pordenone"
+        },
+        "PZ": {
+          "label": "Province of Potenza"
+        },
+        "PO": {
+          "label": "Province of Prato"
+        },
+        "RA": {
+          "label": "Province of Ravenna"
+        },
+        "RE": {
+          "label": "Province of Reggio Emilia"
+        },
+        "RI": {
+          "label": "Province of Rieti"
+        },
+        "RN": {
+          "label": "Province of Rimini"
+        },
+        "RO": {
+          "label": "Province of Rovigo"
+        },
+        "SA": {
+          "label": "Province of Salerno"
+        },
+        "SS": {
+          "label": "Province of Sassari"
+        },
+        "SV": {
+          "label": "Province of Savona"
+        },
+        "SI": {
+          "label": "Province of Siena"
+        },
+        "SO": {
+          "label": "Province of Sondrio"
+        },
+        "TA": {
+          "label": "Province of Taranto"
+        },
+        "TE": {
+          "label": "Province of Teramo"
+        },
+        "TR": {
+          "label": "Province of Terni"
+        },
+        "TV": {
+          "label": "Province of Treviso"
+        },
+        "TS": {
+          "label": "Province of Trieste"
+        },
+        "UD": {
+          "label": "Province of Udine"
+        },
+        "VA": {
+          "label": "Province of Varese"
+        },
+        "VB": {
+          "label": "Province of Verbano-Cusio-Ossola"
+        },
+        "VC": {
+          "label": "Province of Vercelli"
+        },
+        "VR": {
+          "label": "Province of Verona"
+        },
+        "VV": {
+          "label": "Province of Vibo Valentia"
+        },
+        "VI": {
+          "label": "Province of Vicenza"
+        },
+        "VT": {
+          "label": "Province of Viterbo"
+        },
+        "BZ": {
+          "label": "South Tyrol"
+        },
+        "TN": {
+          "label": "Trentino"
+        }
+      },
+      "citiesFile": "cities/IT.json"
+    },
+    "NL": {
+      "label": "Netherlands",
+      "regions": {
+        "BQ1": {
+          "label": "Bonaire"
+        },
+        "DR": {
+          "label": "Drenthe"
+        },
+        "FL": {
+          "label": "Flevoland"
+        },
+        "FR": {
+          "label": "Friesland"
+        },
+        "GE": {
+          "label": "Gelderland"
+        },
+        "GR": {
+          "label": "Groningen"
+        },
+        "LI": {
+          "label": "Limburg"
+        },
+        "NB": {
+          "label": "North Brabant"
+        },
+        "NH": {
+          "label": "North Holland"
+        },
+        "OV": {
+          "label": "Overijssel"
+        },
+        "BQ2": {
+          "label": "Saba"
+        },
+        "BQ3": {
+          "label": "Sint Eustatius"
+        },
+        "ZH": {
+          "label": "South Holland"
+        },
+        "UT": {
+          "label": "Utrecht"
+        },
+        "ZE": {
+          "label": "Zeeland"
+        }
+      },
+      "citiesFile": "cities/NL.json"
+    },
+    "NZ": {
+      "label": "New Zealand",
+      "regions": {
+        "AUK": {
+          "label": "Auckland Region"
+        },
+        "BOP": {
+          "label": "Bay of Plenty Region"
+        },
+        "CAN": {
+          "label": "Canterbury Region"
+        },
+        "CIT": {
+          "label": "Chatham Islands"
+        },
+        "GIS": {
+          "label": "Gisborne District"
+        },
+        "HKB": {
+          "label": "Hawke's Bay Region"
+        },
+        "MWT": {
+          "label": "Manawatu-Wanganui Region"
+        },
+        "MBH": {
+          "label": "Marlborough Region"
+        },
+        "NSN": {
+          "label": "Nelson Region"
+        },
+        "NTL": {
+          "label": "Northland Region"
+        },
+        "OTA": {
+          "label": "Otago Region"
+        },
+        "STL": {
+          "label": "Southland Region"
+        },
+        "TKI": {
+          "label": "Taranaki Region"
+        },
+        "TAS": {
+          "label": "Tasman District"
+        },
+        "WKO": {
+          "label": "Waikato Region"
+        },
+        "WGN": {
+          "label": "Wellington Region"
+        },
+        "WTC": {
+          "label": "West Coast Region"
+        }
+      },
+      "citiesFile": "cities/NZ.json"
+    },
+    "PA": {
+      "label": "Panama",
+      "regions": {
+        "1": {
+          "label": "Bocas del Toro Province"
+        },
+        "2": {
+          "label": "Coclé Province"
+        },
+        "3": {
+          "label": "Colón Province"
+        },
+        "4": {
+          "label": "Chiriquí Province"
+        },
+        "5": {
+          "label": "Darién Province"
+        },
+        "6": {
+          "label": "Herrera Province"
+        },
+        "7": {
+          "label": "Los Santos Province"
+        },
+        "8": {
+          "label": "Panamá Province"
+        },
+        "9": {
+          "label": "Veraguas Province"
+        },
+        "10": {
+          "label": "Panamá Oeste Province"
+        },
+        "EM": {
+          "label": "Emberá-Wounaan Comarca"
+        },
+        "KY": {
+          "label": "Guna Yala"
+        },
+        "NB": {
+          "label": "Ngöbe-Buglé Comarca"
+        }
+      },
+      "citiesFile": "cities/PA.json"
+    },
+    "PY": {
+      "label": "Paraguay",
+      "regions": {
+        "1": {
+          "label": "Concepción Department"
+        },
+        "2": {
+          "label": "San Pedro Department"
+        },
+        "3": {
+          "label": "Cordillera Department"
+        },
+        "4": {
+          "label": "Guairá Department"
+        },
+        "5": {
+          "label": "Caaguazú"
+        },
+        "6": {
+          "label": "Caazapá"
+        },
+        "7": {
+          "label": "Itapúa"
+        },
+        "8": {
+          "label": "Misiones Department"
+        },
+        "9": {
+          "label": "Paraguarí Department"
+        },
+        "10": {
+          "label": "Alto Paraná Department"
+        },
+        "11": {
+          "label": "Central Department"
+        },
+        "12": {
+          "label": "Ñeembucú Department"
+        },
+        "13": {
+          "label": "Amambay Department"
+        },
+        "14": {
+          "label": "Canindeyú"
+        },
+        "15": {
+          "label": "Presidente Hayes Department"
+        },
+        "16": {
+          "label": "Alto Paraguay Department"
+        },
+        "19": {
+          "label": "Boquerón Department"
+        }
+      },
+      "citiesFile": "cities/PY.json"
+    },
+    "PT": {
+      "label": "Portugal",
+      "regions": {
+        "10": {
+          "label": "Leiria"
+        },
+        "11": {
+          "label": "Lisbon"
+        },
+        "12": {
+          "label": "Portalegre"
+        },
+        "13": {
+          "label": "Porto"
+        },
+        "14": {
+          "label": "Santarém"
+        },
+        "15": {
+          "label": "Setúbal"
+        },
+        "16": {
+          "label": "Viana do Castelo"
+        },
+        "17": {
+          "label": "Vila Real"
+        },
+        "18": {
+          "label": "Viseu"
+        },
+        "20": {
+          "label": "Açores"
+        },
+        "30": {
+          "label": "Madeira"
+        },
+        "01": {
+          "label": "Aveiro"
+        },
+        "02": {
+          "label": "Beja"
+        },
+        "03": {
+          "label": "Braga"
+        },
+        "04": {
+          "label": "Bragança"
+        },
+        "05": {
+          "label": "Castelo Branco"
+        },
+        "06": {
+          "label": "Coimbra"
+        },
+        "07": {
+          "label": "Évora"
+        },
+        "08": {
+          "label": "Faro"
+        },
+        "09": {
+          "label": "Guarda"
+        }
+      },
+      "citiesFile": "cities/PT.json"
+    },
+    "PR": {
+      "label": "Puerto Rico",
+      "regions": {},
+      "citiesFile": "cities/PR.json"
+    },
+    "ES": {
+      "label": "Spain",
+      "regions": {
+        "AN": {
+          "label": "Andalusia"
+        },
+        "AR": {
+          "label": "Aragon"
+        },
+        "AS": {
+          "label": "Asturias"
+        },
+        "AV": {
+          "label": "Ávila"
+        },
+        "PM": {
+          "label": "Balearic Islands"
+        },
+        "PV": {
+          "label": "Basque Country"
+        },
+        "BU": {
+          "label": "Burgos Province"
+        },
+        "CN": {
+          "label": "Canary Islands"
+        },
+        "CB": {
+          "label": "Cantabria"
+        },
+        "CL": {
+          "label": "Castile and León"
+        },
+        "CM": {
+          "label": "Castilla La Mancha"
+        },
+        "CT": {
+          "label": "Catalonia"
+        },
+        "CE": {
+          "label": "Ceuta"
+        },
+        "EX": {
+          "label": "Extremadura"
+        },
+        "GA": {
+          "label": "Galicia"
+        },
+        "RI": {
+          "label": "La Rioja"
+        },
+        "LE": {
+          "label": "Léon"
+        },
+        "MD": {
+          "label": "Madrid"
+        },
+        "ML": {
+          "label": "Melilla"
+        },
+        "MC": {
+          "label": "Murcia"
+        },
+        "NC": {
+          "label": "Navarra"
+        },
+        "P": {
+          "label": "Palencia Province"
+        },
+        "SA": {
+          "label": "Salamanca Province"
+        },
+        "SG": {
+          "label": "Segovia Province"
+        },
+        "SO": {
+          "label": "Soria Province"
+        },
+        "VC": {
+          "label": "Valencia"
+        },
+        "VA": {
+          "label": "Valladolid Province"
+        },
+        "ZA": {
+          "label": "Zamora Province"
+        }
+      },
+      "citiesFile": "cities/ES.json"
+    },
+    "CH": {
+      "label": "Switzerland",
+      "regions": {
+        "AG": {
+          "label": "Aargau"
+        },
+        "AR": {
+          "label": "Appenzell Ausserrhoden"
+        },
+        "AI": {
+          "label": "Appenzell Innerrhoden"
+        },
+        "BL": {
+          "label": "Basel-Land"
+        },
+        "BS": {
+          "label": "Basel-Stadt"
+        },
+        "BE": {
+          "label": "Bern"
+        },
+        "FR": {
+          "label": "Fribourg"
+        },
+        "GE": {
+          "label": "Geneva"
+        },
+        "GL": {
+          "label": "Glarus"
+        },
+        "GR": {
+          "label": "Graubünden"
+        },
+        "JU": {
+          "label": "Jura"
+        },
+        "LU": {
+          "label": "Lucerne"
+        },
+        "NE": {
+          "label": "Neuchâtel"
+        },
+        "NW": {
+          "label": "Nidwalden"
+        },
+        "OW": {
+          "label": "Obwalden"
+        },
+        "SH": {
+          "label": "Schaffhausen"
+        },
+        "SZ": {
+          "label": "Schwyz"
+        },
+        "SO": {
+          "label": "Solothurn"
+        },
+        "SG": {
+          "label": "St. Gallen"
+        },
+        "TG": {
+          "label": "Thurgau"
+        },
+        "TI": {
+          "label": "Ticino"
+        },
+        "UR": {
+          "label": "Uri"
+        },
+        "VS": {
+          "label": "Valais"
+        },
+        "VD": {
+          "label": "Vaud"
+        },
+        "ZG": {
+          "label": "Zug"
+        },
+        "ZH": {
+          "label": "Zürich"
+        }
+      },
+      "citiesFile": "cities/CH.json"
+    },
+    "GB": {
+      "label": "United Kingdom",
+      "regions": {
+        "ABE": {
+          "label": "Aberdeen"
+        },
+        "ABD": {
+          "label": "Aberdeenshire"
+        },
+        "ANS": {
+          "label": "Angus"
+        },
+        "ANT": {
+          "label": "Antrim"
+        },
+        "ANN": {
+          "label": "Antrim and Newtownabbey"
+        },
+        "ARD": {
+          "label": "Ards"
+        },
+        "AND": {
+          "label": "Ards and North Down"
+        },
+        "AGB": {
+          "label": "Argyll and Bute"
+        },
+        "ARM": {
+          "label": "Armagh City and District Council"
+        },
+        "ABC": {
+          "label": "Armagh, Banbridge and Craigavon"
+        },
+        "SH-AC": {
+          "label": "Ascension Island"
+        },
+        "BLA": {
+          "label": "Ballymena Borough"
+        },
+        "BLY": {
+          "label": "Ballymoney"
+        },
+        "BNB": {
+          "label": "Banbridge"
+        },
+        "BNS": {
+          "label": "Barnsley"
+        },
+        "BAS": {
+          "label": "Bath and North East Somerset"
+        },
+        "BDF": {
+          "label": "Bedford"
+        },
+        "BFS": {
+          "label": "Belfast district"
+        },
+        "BIR": {
+          "label": "Birmingham"
+        },
+        "BBD": {
+          "label": "Blackburn with Darwen"
+        },
+        "BPL": {
+          "label": "Blackpool"
+        },
+        "BGW": {
+          "label": "Blaenau Gwent County Borough"
+        },
+        "BOL": {
+          "label": "Bolton"
+        },
+        "BMH": {
+          "label": "Bournemouth"
+        },
+        "BRC": {
+          "label": "Bracknell Forest"
+        },
+        "BRD": {
+          "label": "Bradford"
+        },
+        "BGE": {
+          "label": "Bridgend County Borough"
+        },
+        "BNH": {
+          "label": "Brighton and Hove"
+        },
+        "BKM": {
+          "label": "Buckinghamshire"
+        },
+        "BUR": {
+          "label": "Bury"
+        },
+        "CAY": {
+          "label": "Caerphilly County Borough"
+        },
+        "CLD": {
+          "label": "Calderdale"
+        },
+        "CAM": {
+          "label": "Cambridgeshire"
+        },
+        "CMN": {
+          "label": "Carmarthenshire"
+        },
+        "CKF": {
+          "label": "Carrickfergus Borough Council"
+        },
+        "CSR": {
+          "label": "Castlereagh"
+        },
+        "CCG": {
+          "label": "Causeway Coast and Glens"
+        },
+        "CBF": {
+          "label": "Central Bedfordshire"
+        },
+        "CGN": {
+          "label": "Ceredigion"
+        },
+        "CHE": {
+          "label": "Cheshire East"
+        },
+        "CHW": {
+          "label": "Cheshire West and Chester"
+        },
+        "CRF": {
+          "label": "City and County of Cardiff"
+        },
+        "SWA": {
+          "label": "City and County of Swansea"
+        },
+        "BST": {
+          "label": "City of Bristol"
+        },
+        "DER": {
+          "label": "City of Derby"
+        },
+        "KHL": {
+          "label": "City of Kingston upon Hull"
+        },
+        "LCE": {
+          "label": "City of Leicester"
+        },
+        "LND": {
+          "label": "City of London"
+        },
+        "NGM": {
+          "label": "City of Nottingham"
+        },
+        "PTE": {
+          "label": "City of Peterborough"
+        },
+        "PLY": {
+          "label": "City of Plymouth"
+        },
+        "POR": {
+          "label": "City of Portsmouth"
+        },
+        "STH": {
+          "label": "City of Southampton"
+        },
+        "STE": {
+          "label": "City of Stoke-on-Trent"
+        },
+        "SND": {
+          "label": "City of Sunderland"
+        },
+        "WSM": {
+          "label": "City of Westminster"
+        },
+        "WLV": {
+          "label": "City of Wolverhampton"
+        },
+        "YOR": {
+          "label": "City of York"
+        },
+        "CLK": {
+          "label": "Clackmannanshire"
+        },
+        "CLR": {
+          "label": "Coleraine Borough Council"
+        },
+        "CWY": {
+          "label": "Conwy County Borough"
+        },
+        "CKT": {
+          "label": "Cookstown District Council"
+        },
+        "CON": {
+          "label": "Cornwall"
+        },
+        "DUR": {
+          "label": "County Durham"
+        },
+        "COV": {
+          "label": "Coventry"
+        },
+        "CGV": {
+          "label": "Craigavon Borough Council"
+        },
+        "CMA": {
+          "label": "Cumbria"
+        },
+        "DAL": {
+          "label": "Darlington"
+        },
+        "DEN": {
+          "label": "Denbighshire"
+        },
+        "DBY": {
+          "label": "Derbyshire"
+        },
+        "DRS": {
+          "label": "Derry City and Strabane"
+        },
+        "DRY": {
+          "label": "Derry City Council"
+        },
+        "DEV": {
+          "label": "Devon"
+        },
+        "DNC": {
+          "label": "Doncaster"
+        },
+        "DOR": {
+          "label": "Dorset"
+        },
+        "DOW": {
+          "label": "Down District Council"
+        },
+        "DUD": {
+          "label": "Dudley"
+        },
+        "DGY": {
+          "label": "Dumfries and Galloway"
+        },
+        "DND": {
+          "label": "Dundee"
+        },
+        "DGN": {
+          "label": "Dungannon and South Tyrone Borough Council"
+        },
+        "EAY": {
+          "label": "East Ayrshire"
+        },
+        "EDU": {
+          "label": "East Dunbartonshire"
+        },
+        "ELN": {
+          "label": "East Lothian"
+        },
+        "ERW": {
+          "label": "East Renfrewshire"
+        },
+        "ERY": {
+          "label": "East Riding of Yorkshire"
+        },
+        "ESX": {
+          "label": "East Sussex"
+        },
+        "EDH": {
+          "label": "Edinburgh"
+        },
+        "ENG": {
+          "label": "England"
+        },
+        "ESS": {
+          "label": "Essex"
+        },
+        "FAL": {
+          "label": "Falkirk"
+        },
+        "FMO": {
+          "label": "Fermanagh and Omagh"
+        },
+        "FER": {
+          "label": "Fermanagh District Council"
+        },
+        "FIF": {
+          "label": "Fife"
+        },
+        "FLN": {
+          "label": "Flintshire"
+        },
+        "GAT": {
+          "label": "Gateshead"
+        },
+        "GLG": {
+          "label": "Glasgow"
+        },
+        "GLS": {
+          "label": "Gloucestershire"
+        },
+        "GWN": {
+          "label": "Gwynedd"
+        },
+        "HAL": {
+          "label": "Halton"
+        },
+        "HAM": {
+          "label": "Hampshire"
+        },
+        "HPL": {
+          "label": "Hartlepool"
+        },
+        "HEF": {
+          "label": "Herefordshire"
+        },
+        "HRT": {
+          "label": "Hertfordshire"
+        },
+        "HLD": {
+          "label": "Highland"
+        },
+        "IVC": {
+          "label": "Inverclyde"
+        },
+        "IOW": {
+          "label": "Isle of Wight"
+        },
+        "IOS": {
+          "label": "Isles of Scilly"
+        },
+        "KEN": {
+          "label": "Kent"
+        },
+        "KIR": {
+          "label": "Kirklees"
+        },
+        "KWL": {
+          "label": "Knowsley"
+        },
+        "LAN": {
+          "label": "Lancashire"
+        },
+        "LRN": {
+          "label": "Larne Borough Council"
+        },
+        "LDS": {
+          "label": "Leeds"
+        },
+        "LEC": {
+          "label": "Leicestershire"
+        },
+        "LMV": {
+          "label": "Limavady Borough Council"
+        },
+        "LIN": {
+          "label": "Lincolnshire"
+        },
+        "LBC": {
+          "label": "Lisburn and Castlereagh"
+        },
+        "LSB": {
+          "label": "Lisburn City Council"
+        },
+        "LIV": {
+          "label": "Liverpool"
+        },
+        "BDG": {
+          "label": "London Borough of Barking and Dagenham"
+        },
+        "BNE": {
+          "label": "London Borough of Barnet"
+        },
+        "BEX": {
+          "label": "London Borough of Bexley"
+        },
+        "BEN": {
+          "label": "London Borough of Brent"
+        },
+        "BRY": {
+          "label": "London Borough of Bromley"
+        },
+        "CMD": {
+          "label": "London Borough of Camden"
+        },
+        "CRY": {
+          "label": "London Borough of Croydon"
+        },
+        "EAL": {
+          "label": "London Borough of Ealing"
+        },
+        "ENF": {
+          "label": "London Borough of Enfield"
+        },
+        "HCK": {
+          "label": "London Borough of Hackney"
+        },
+        "HMF": {
+          "label": "London Borough of Hammersmith and Fulham"
+        },
+        "HRY": {
+          "label": "London Borough of Haringey"
+        },
+        "HRW": {
+          "label": "London Borough of Harrow"
+        },
+        "HAV": {
+          "label": "London Borough of Havering"
+        },
+        "HIL": {
+          "label": "London Borough of Hillingdon"
+        },
+        "HNS": {
+          "label": "London Borough of Hounslow"
+        },
+        "ISL": {
+          "label": "London Borough of Islington"
+        },
+        "LBH": {
+          "label": "London Borough of Lambeth"
+        },
+        "LEW": {
+          "label": "London Borough of Lewisham"
+        },
+        "MRT": {
+          "label": "London Borough of Merton"
+        },
+        "NWM": {
+          "label": "London Borough of Newham"
+        },
+        "RDB": {
+          "label": "London Borough of Redbridge"
+        },
+        "RIC": {
+          "label": "London Borough of Richmond upon Thames"
+        },
+        "SWK": {
+          "label": "London Borough of Southwark"
+        },
+        "STN": {
+          "label": "London Borough of Sutton"
+        },
+        "TWH": {
+          "label": "London Borough of Tower Hamlets"
+        },
+        "WFT": {
+          "label": "London Borough of Waltham Forest"
+        },
+        "WND": {
+          "label": "London Borough of Wandsworth"
+        },
+        "MFT": {
+          "label": "Magherafelt District Council"
+        },
+        "MAN": {
+          "label": "Manchester"
+        },
+        "MDW": {
+          "label": "Medway"
+        },
+        "MTY": {
+          "label": "Merthyr Tydfil County Borough"
+        },
+        "WGN": {
+          "label": "Metropolitan Borough of Wigan"
+        },
+        "MEA": {
+          "label": "Mid and East Antrim"
+        },
+        "MUL": {
+          "label": "Mid Ulster"
+        },
+        "MDB": {
+          "label": "Middlesbrough"
+        },
+        "MLN": {
+          "label": "Midlothian"
+        },
+        "MIK": {
+          "label": "Milton Keynes"
+        },
+        "MON": {
+          "label": "Monmouthshire"
+        },
+        "MRY": {
+          "label": "Moray"
+        },
+        "MYL": {
+          "label": "Moyle District Council"
+        },
+        "NTL": {
+          "label": "Neath Port Talbot County Borough"
+        },
+        "NET": {
+          "label": "Newcastle upon Tyne"
+        },
+        "NWP": {
+          "label": "Newport"
+        },
+        "NYM": {
+          "label": "Newry and Mourne District Council"
+        },
+        "NMD": {
+          "label": "Newry, Mourne and Down"
+        },
+        "NTA": {
+          "label": "Newtownabbey Borough Council"
+        },
+        "NFK": {
+          "label": "Norfolk"
+        },
+        "NAY": {
+          "label": "North Ayrshire"
+        },
+        "NDN": {
+          "label": "North Down Borough Council"
+        },
+        "NEL": {
+          "label": "North East Lincolnshire"
+        },
+        "NLK": {
+          "label": "North Lanarkshire"
+        },
+        "NLN": {
+          "label": "North Lincolnshire"
+        },
+        "NSM": {
+          "label": "North Somerset"
+        },
+        "NTY": {
+          "label": "North Tyneside"
+        },
+        "NYK": {
+          "label": "North Yorkshire"
+        },
+        "NTH": {
+          "label": "Northamptonshire"
+        },
+        "NIR": {
+          "label": "Northern Ireland"
+        },
+        "NBL": {
+          "label": "Northumberland"
+        },
+        "NTT": {
+          "label": "Nottinghamshire"
+        },
+        "OLD": {
+          "label": "Oldham"
+        },
+        "OMH": {
+          "label": "Omagh District Council"
+        },
+        "ORK": {
+          "label": "Orkney Islands"
+        },
+        "ELS": {
+          "label": "Outer Hebrides"
+        },
+        "OXF": {
+          "label": "Oxfordshire"
+        },
+        "PEM": {
+          "label": "Pembrokeshire"
+        },
+        "PKN": {
+          "label": "Perth and Kinross"
+        },
+        "POL": {
+          "label": "Poole"
+        },
+        "POW": {
+          "label": "Powys"
+        },
+        "RDG": {
+          "label": "Reading"
+        },
+        "RCC": {
+          "label": "Redcar and Cleveland"
+        },
+        "RFW": {
+          "label": "Renfrewshire"
+        },
+        "RCT": {
+          "label": "Rhondda Cynon Taf"
+        },
+        "RCH": {
+          "label": "Rochdale"
+        },
+        "ROT": {
+          "label": "Rotherham"
+        },
+        "GRE": {
+          "label": "Royal Borough of Greenwich"
+        },
+        "KEC": {
+          "label": "Royal Borough of Kensington and Chelsea"
+        },
+        "KTT": {
+          "label": "Royal Borough of Kingston upon Thames"
+        },
+        "RUT": {
+          "label": "Rutland"
+        },
+        "SH-HL": {
+          "label": "Saint Helena"
+        },
+        "SLF": {
+          "label": "Salford"
+        },
+        "SAW": {
+          "label": "Sandwell"
+        },
+        "SCT": {
+          "label": "Scotland"
+        },
+        "SCB": {
+          "label": "Scottish Borders"
+        },
+        "SFT": {
+          "label": "Sefton"
+        },
+        "SHF": {
+          "label": "Sheffield"
+        },
+        "ZET": {
+          "label": "Shetland Islands"
+        },
+        "SHR": {
+          "label": "Shropshire"
+        },
+        "SLG": {
+          "label": "Slough"
+        },
+        "SOL": {
+          "label": "Solihull"
+        },
+        "SOM": {
+          "label": "Somerset"
+        },
+        "SAY": {
+          "label": "South Ayrshire"
+        },
+        "SGC": {
+          "label": "South Gloucestershire"
+        },
+        "SLK": {
+          "label": "South Lanarkshire"
+        },
+        "STY": {
+          "label": "South Tyneside"
+        },
+        "SOS": {
+          "label": "Southend-on-Sea"
+        },
+        "SHN": {
+          "label": "St Helens"
+        },
+        "STS": {
+          "label": "Staffordshire"
+        },
+        "STG": {
+          "label": "Stirling"
+        },
+        "SKP": {
+          "label": "Stockport"
+        },
+        "STT": {
+          "label": "Stockton-on-Tees"
+        },
+        "STB": {
+          "label": "Strabane District Council"
+        },
+        "SFK": {
+          "label": "Suffolk"
+        },
+        "SRY": {
+          "label": "Surrey"
+        },
+        "SWD": {
+          "label": "Swindon"
+        },
+        "TAM": {
+          "label": "Tameside"
+        },
+        "TFW": {
+          "label": "Telford and Wrekin"
+        },
+        "THR": {
+          "label": "Thurrock"
+        },
+        "TOB": {
+          "label": "Torbay"
+        },
+        "TOF": {
+          "label": "Torfaen"
+        },
+        "TRF": {
+          "label": "Trafford"
+        },
+        "UKM": {
+          "label": "United Kingdom"
+        },
+        "VGL": {
+          "label": "Vale of Glamorgan"
+        },
+        "WKF": {
+          "label": "Wakefield"
+        },
+        "WLS": {
+          "label": "Wales"
+        },
+        "WLL": {
+          "label": "Walsall"
+        },
+        "WRT": {
+          "label": "Warrington"
+        },
+        "WAR": {
+          "label": "Warwickshire"
+        },
+        "WBK": {
+          "label": "West Berkshire"
+        },
+        "WDU": {
+          "label": "West Dunbartonshire"
+        },
+        "WLN": {
+          "label": "West Lothian"
+        },
+        "WSX": {
+          "label": "West Sussex"
+        },
+        "WIL": {
+          "label": "Wiltshire"
+        },
+        "WNM": {
+          "label": "Windsor and Maidenhead"
+        },
+        "WRL": {
+          "label": "Wirral"
+        },
+        "WOK": {
+          "label": "Wokingham"
+        },
+        "WOR": {
+          "label": "Worcestershire"
+        },
+        "WRX": {
+          "label": "Wrexham County Borough"
+        }
+      },
+      "citiesFile": "cities/GB.json"
+    },
+    "UY": {
+      "label": "Uruguay",
+      "regions": {
+        "AR": {
+          "label": "Artigas Department"
+        },
+        "CA": {
+          "label": "Canelones Department"
+        },
+        "CL": {
+          "label": "Cerro Largo Department"
+        },
+        "CO": {
+          "label": "Colonia Department"
+        },
+        "DU": {
+          "label": "Durazno Department"
+        },
+        "FS": {
+          "label": "Flores Department"
+        },
+        "FD": {
+          "label": "Florida Department"
+        },
+        "LA": {
+          "label": "Lavalleja Department"
+        },
+        "MA": {
+          "label": "Maldonado Department"
+        },
+        "MO": {
+          "label": "Montevideo Department"
+        },
+        "PA": {
+          "label": "Paysandú Department"
+        },
+        "RN": {
+          "label": "Río Negro Department"
+        },
+        "RV": {
+          "label": "Rivera Department"
+        },
+        "RO": {
+          "label": "Rocha Department"
+        },
+        "SA": {
+          "label": "Salto Department"
+        },
+        "SJ": {
+          "label": "San José Department"
+        },
+        "SO": {
+          "label": "Soriano Department"
+        },
+        "TA": {
+          "label": "Tacuarembó Department"
+        },
+        "TT": {
+          "label": "Treinta y Tres Department"
+        }
+      },
+      "citiesFile": "cities/UY.json"
+    }
+  }
+}

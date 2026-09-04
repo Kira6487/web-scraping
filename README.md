@@ -155,3 +155,39 @@ python -m unittest discover -s tests -v
 ```
 
 No hay build frontend separado: los assets estáticos se sirven directamente desde `web/`.
+## Static frontend data
+
+The deployed frontend is intentionally independent from the prospect-search backend.
+
+- `web/data/locations.json` contains the supported countries and administrative regions.
+- `web/data/cities/{ISO2}.json` contains city lists grouped by region and is loaded once per country.
+- `web/data/categories.json` contains the enabled business categories and their `searchAliases`.
+- Country identifiers use ISO 3166-1 alpha-2 codes. The initial catalogue includes United States, Peru, Canada, Mexico, Brazil, Argentina, Chile, Colombia, Ecuador, Bolivia, Uruguay, Paraguay, Costa Rica, Panama, Dominican Republic, Puerto Rico, United Kingdom, Ireland, Spain, Portugal, France, Germany, Italy, Netherlands, Belgium, Switzerland, Austria, Australia and New Zealand.
+
+The location catalogue is generated during development from `country-state-city@3.2.1` (GPL-3.0), then committed as static JSON. To update it, download the pinned package and run the committed generator:
+
+```bash
+npm pack country-state-city@3.2.1 --pack-destination .tmp
+tar -xzf .tmp/country-state-city-3.2.1.tgz -C .tmp
+node scripts/generate_static_data.mjs .tmp/package/lib/assets
+```
+
+Validate the required ISO codes and run the test suite after regeneration. To add a country, add its ISO2 code to `scripts/generate_static_data.mjs`; do not hand-invent subdivisions or cities. The browser only reads these versioned files, so selectors work without Flask, Python, API keys or an external runtime service.
+
+## Vercel static deployment
+
+Use the existing Vercel settings:
+
+```text
+Framework Preset: Other
+Root Directory: web
+Build Command: empty
+Output Directory: .
+Install Command: empty
+```
+
+The frontend uses relative asset paths and `fetch('./data/...')`, so it can be served directly from `web/` with no build step. The single `API_BASE_URL` configuration in `web/app.js` is only used when `Generate Prospect Search` is submitted. A missing backend produces `Prospect search backend is currently unavailable.` and does not affect the location or category selectors.
+
+## Backend separation
+
+Country, State / Region, City and Business Categories are static frontend data. Prospect generation still requires a configured public backend, which keeps the Google Places API key exclusively on the server. The Python server also serves the static data locally and retains `/api/options` for compatibility.

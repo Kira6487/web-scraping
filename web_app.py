@@ -16,15 +16,48 @@ from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
+from urllib.parse import unquote, urlsplit
 
 import extract_leads as engine
 
 
 ROOT = Path(__file__).resolve().parent
 WEB_DIR = ROOT / "web"
+STATIC_DATA_DIR = WEB_DIR / "data"
 OUTPUT_DIR = ROOT / "output"
-LOCATIONS = json.loads((ROOT / "config" / "locations.json").read_text(encoding="utf-8"))
-CATEGORIES = json.loads((ROOT / "config" / "business_categories.json").read_text(encoding="utf-8"))
+
+
+def load_static_locations() -> dict[str, dict[str, Any]]:
+    """Load the same static catalogue used by the Vercel frontend."""
+    metadata_path = STATIC_DATA_DIR / "locations.json"
+    if not metadata_path.exists():
+        return json.loads((ROOT / "config" / "locations.json").read_text(encoding="utf-8"))
+    metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    locations: dict[str, dict[str, Any]] = {}
+    for country_code, country in metadata["countries"].items():
+        city_path = STATIC_DATA_DIR / country["citiesFile"]
+        city_data = json.loads(city_path.read_text(encoding="utf-8"))
+        locations[country_code] = {
+            "label": country["label"],
+            "regions": {
+                region_code: {
+                    "label": region["label"],
+                    "cities": city_data.get(region_code, []),
+                }
+                for region_code, region in country.get("regions", {}).items()
+            },
+            "cities": city_data.get("__country__", []),
+        }
+    return locations
+
+
+LOCATIONS = load_static_locations()
+CATEGORIES_PATH = STATIC_DATA_DIR / "categories.json"
+CATEGORIES = json.loads(
+    CATEGORIES_PATH.read_text(encoding="utf-8")
+    if CATEGORIES_PATH.exists()
+    else (ROOT / "config" / "business_categories.json").read_text(encoding="utf-8")
+)
 CATEGORY_BY_ID = {item["id"]: item for item in CATEGORIES if item.get("enabled", True)}
 RUN_ID_RE = re.compile(r"^[0-9a-f]{32}$")
 
@@ -71,17 +104,23 @@ def validate_search(payload: dict[str, Any]) -> tuple[dict[str, Any] | None, str
         return None, "One or more business categories are invalid."
     if not 1 <= max_results <= 500:
         return None, "Maximum Results must be between 1 and 500."
-    regions = LOCATIONS[country]["regions"]
-    if state not in regions:
-        return None, "Please select a valid state or region."
     custom_city = str(payload.get("custom_city", "")).strip()
+    regions = LOCATIONS[country]["regions"]
+    if state:
+        if state not in regions:
+            return None, "Please select a valid state or region."
+        if not custom_city and city not in regions[state]["cities"]:
+            return None, "Please select a valid city or provide Custom city."
+    elif not custom_city:
+        if regions:
+            return None, "Please select a valid state or region."
+        if city not in LOCATIONS[country].get("cities", []):
+            return None, "Please select a valid city or provide Custom city."
     if custom_city:
         city = custom_city
-    elif city not in regions[state]["cities"]:
-        return None, "Please select a valid city or provide Custom city."
     return {
         "country": country,
-        "state": regions[state]["label"],
+        "state": regions[state]["label"] if state else LOCATIONS[country]["label"],
         "city": city,
         "categories": categories,
         "max_results": max_results,
@@ -147,6 +186,13 @@ class AppHandler(BaseHTTPRequestHandler):
             return self.serve_file(WEB_DIR / "app.js", "text/javascript; charset=utf-8")
         if self.path == "/styles.css":
             return self.serve_file(WEB_DIR / "styles.css", "text/css; charset=utf-8")
+        if self.path.startswith("/data/"):
+            relative_path = unquote(urlsplit(self.path).path).lstrip("/")
+            path = (WEB_DIR / relative_path).resolve()
+            if STATIC_DATA_DIR.resolve() not in path.parents:
+                return self.send_error(HTTPStatus.NOT_FOUND)
+            content_type = "application/json; charset=utf-8" if path.suffix == ".json" else "application/octet-stream"
+            return self.serve_file(path, content_type)
         if self.path == "/api/options":
             return json_response(self, {"countries": LOCATIONS, "categories": CATEGORIES})
         if self.path == "/api/health":
